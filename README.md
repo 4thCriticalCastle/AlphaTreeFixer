@@ -10,6 +10,16 @@ When a Minecraft world generated before Alpha v1.2.0 is updated to Minecraft Bet
 
 This problem never goes away on its own; the trees can be cut down or the leaves replaced, but that's a lot of leaves if you're an explorer. And if the world is updated beyond that to versions with more leaf types, the problem worsens. Once updated to Minecraft Full Release 1.2, jungle leaves will start appearing.
 
+### Examples
+
+This was a world generated in Minecraft Alpha v1.0.15. This is what happened when updated to Beta 1.2:
+
+[A minecraft world with trees that have oak, spruce, and birch leaves together](./readme_imgs/Beta1.2.png)
+
+Then, after being updated to Full Release 1.2 (stopping in Beta 1.3 along the way for a world type conversion):
+
+[A minecraft world with trees that have even more leaf types, including jungle](./readme_imgs/FR1.2.png)
+
 
 Generally, the solutions to this have been either:
 
@@ -22,6 +32,12 @@ I didn't like any of these solutions, so I made this tool.
 ## What This Does
 
 Simply put, this program will go through your minecraft world and turn all your leaves into oak leaves. If this is done between versions Alpha v1.2.0 (the version where newly generated trees will be safe from this problem) and Beta 1.2 (the version where the problem actually appears), it will prevent the problem from ever appearing. If it's done to a world that has been loaded into Beta 1.2 and that already has the problem, it will fix all those leaves.
+
+### Results
+
+Here's the same world I showed above (well, a copy of it) after running the program after opening it in Beta 1.2:
+
+[Minecraft screenshot with oak trees that actually have the correct leaves](./readme_imgs/Beta1.2Fixed.png)
 
 ## What This DOESN'T Do
 
