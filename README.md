@@ -47,9 +47,9 @@ This program does not alter any block positions. Minecraft leaf identity (e.g. o
 
 ## How to Run
 
-In this repo, you will find a 7z file called "AlphaTreeFixer.7z". Download that, extract it to a location of your choice, and run the .exe file within it. A terminal will appear which you can ignore in favor of the gui that should also appear. I made the .exe with pyinstaller and have no idea how it works personally; it's there for your convenience but I probably cannot help you if it doesn't work.
+**Windows:** Download tree_fixer.exe from the latest Release, visible on the sidebar of this repo. On running the exe, an empty terminal will be appear, followed shortly by a GUI you can use.
 
-Alternatively, you can download the code itself, all contained within tree_fixer.py. See the requirements list below for what packages are needed, but otherwise you can just run the python code however you see fit; if run as main, the gui should appear promptly.
+**Mac / Linux / Don't like .exes:** Alternatively, you can download the code itself, all contained within tree_fixer.py. See the requirements list below for what packages are needed, but otherwise you can just run the python code however you see fit; if run as main, the gui should appear promptly.
 
 ## How to Use
 
