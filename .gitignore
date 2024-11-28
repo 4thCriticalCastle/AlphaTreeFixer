@@ -1,3 +1,5 @@
 .vscode
 worlds/
 worlds-safe/
+build/
+dist/

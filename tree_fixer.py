@@ -1,7 +1,6 @@
 import nbtlib
 import os
 import tkinter as tk
-import time
 import numpy as np
 from queue import Queue
 from tkinter.ttk import *
@@ -133,7 +132,7 @@ class ConvertWorldThread(Thread):
         Find the byte array indices of blocks in target file
 
         Args:
-            path: The path for the target .dat file
+            chunk_path: The path for the target .dat file
             block_id: The id of the block to search for
 
         Returns:
@@ -149,13 +148,13 @@ class ConvertWorldThread(Thread):
     def compile_chunk_blocks(self, block_id: int):
         '''
         Find the location of all blocks every chunk in a file
+        Uses current dats attribute for chunklist
 
         Args:
-            pathlist: The list of paths for all chunk .dat files to search
-            block_id: The id of the block to search for 
+            block_id: The id of the block to search for (usually 18 for leaves)
         
         Returns:
-            A dict of .dat paths as keys with lists of leaf indices as their values
+            A dict of .dat paths as keys with lists of block indices as their values
         '''
         self.queue.put(("status", 'Finding all leaves...'))
         block_map = dict()
@@ -167,11 +166,11 @@ class ConvertWorldThread(Thread):
 
     def write_from_block_map(self, block_map: dict, target_value):
         '''
-        Take a block_map and alter the data of all leaves in the data array
+        Take a block_map and alter the data of all leaves in the data tag
 
         Args:
-            block_map: Dictionary mapping chunk path to list of leaf indices
-            target_value: the value to set leaf block data to
+            block_map: Dictionary mapping chunk path to list of block indices
+            target_value: the value to set block data to
         '''
         self.queue.put(("status", "Editing leaf blockdata..."))
         for chunk_path in block_map:
