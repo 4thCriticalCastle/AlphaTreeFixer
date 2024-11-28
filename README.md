@@ -14,11 +14,11 @@ This problem never goes away on its own; the trees can be cut down or the leaves
 
 This was a world generated in Minecraft Alpha v1.0.15. This is what happened when updated to Beta 1.2:
 
-[A minecraft world with trees that have oak, spruce, and birch leaves together](./readme_imgs/Beta1.2.png)
+![A minecraft world with trees that have oak, spruce, and birch leaves together](./readme_imgs/Beta1.2.png)
 
 Then, after being updated to Full Release 1.2 (stopping in Beta 1.3 along the way for a world type conversion):
 
-[A minecraft world with trees that have even more leaf types, including jungle](./readme_imgs/FR1.2.png)
+![A minecraft world with trees that have even more leaf types, including jungle](./readme_imgs/FR1.2.png)
 
 
 Generally, the solutions to this have been either:
@@ -37,7 +37,7 @@ Simply put, this program will go through your minecraft world and turn all your 
 
 Here's the same world I showed above (well, a copy of it) after running the program after opening it in Beta 1.2:
 
-[Minecraft screenshot with oak trees that actually have the correct leaves](./readme_imgs/Beta1.2Fixed.png)
+![Minecraft screenshot with oak trees that actually have the correct leaves](./readme_imgs/Beta1.2Fixed.png)
 
 ## What This DOESN'T Do
 
